@@ -49,9 +49,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 text-lg text-slate-600 leading-relaxed sm:text-xl max-w-2xl mx-auto"
           >
-            Automated SMS outreach after every discharge. Sentiment gating
-            routes happy families to Google and concerns to a private form.
-            Zero PHI stored. Zero manual work.
+            Every discharge is a chance to earn a 5-star review — or catch a
+            complaint before it goes public. Caresite automates both, without
+            storing a single byte of PHI or requiring any staff action.
           </motion.p>
 
           {/* CTAs */}
@@ -62,7 +62,7 @@ export function Hero() {
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button href="#contact" size="lg">
-              Book Your Free Audit
+              Get Your Free Analysis
             </Button>
             <Button href="#how-it-works" variant="outline" size="lg">
               See How It Works

@@ -4,7 +4,7 @@ import { TrustBar } from "@/components/TrustBar";
 import { PainPoints } from "@/components/PainPoints";
 import { HowItWorks } from "@/components/HowItWorks";
 import { CaseStudy } from "@/components/CaseStudy";
-import { CTABanner } from "@/components/CTABanner";
+import { CTABanner, CTABannerLateFunnel } from "@/components/CTABanner";
 import { VideoSection } from "@/components/VideoSection";
 import { ProductPreview } from "@/components/ProductPreview";
 import { Features } from "@/components/Features";
@@ -32,14 +32,14 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <PainPoints />
-        <HowItWorks />
         <CaseStudy />
+        <HowItWorks />
         <VideoSection />
         <CTABanner />
         <ProductPreview />
         <Features />
         <Testimonials />
-        <CTABanner />
+        <CTABannerLateFunnel />
         <ComparisonTable />
         <Pricing />
         <About />

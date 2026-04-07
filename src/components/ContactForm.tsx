@@ -51,11 +51,11 @@ export function ContactForm() {
             >
               <CheckCircle size={48} className="text-secondary-500" />
               <h3 className="text-xl font-semibold text-slate-900">
-                We&apos;ll be in touch!
+                Your analysis is queued.
               </h3>
               <p className="text-slate-600">
-                A member of our team will reach out within one business day to
-                get your facility set up.
+                Expect an email within one business day with your Google profile
+                audit, competitor comparison, and 90-day growth roadmap.
               </p>
             </div>
           ) : (
@@ -134,53 +134,11 @@ export function ContactForm() {
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="text-left">
-                  <label
-                    htmlFor="role"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
-                  >
-                    Your role
-                  </label>
-                  <select
-                    id="role"
-                    name="role"
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors bg-white"
-                  >
-                    <option value="">Select your role</option>
-                    <option value="administrator">Administrator</option>
-                    <option value="don">Director of Nursing</option>
-                    <option value="regional-ops">Regional Operations</option>
-                    <option value="marketing">Marketing Director</option>
-                    <option value="owner">Owner / CEO</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div className="text-left">
-                  <label
-                    htmlFor="locations"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
-                  >
-                    Number of facilities
-                  </label>
-                  <select
-                    id="locations"
-                    name="locations"
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors bg-white"
-                  >
-                    <option value="1">1 facility</option>
-                    <option value="2-5">2-5 facilities</option>
-                    <option value="6-15">6-15 facilities</option>
-                    <option value="16-50">16-50 facilities</option>
-                    <option value="50+">50+ facilities</option>
-                  </select>
-                </div>
-              </div>
               <button
                 type="submit"
                 className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 text-white px-8 py-4 text-lg font-semibold hover:bg-primary-600 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
               >
-                Book My Free Audit
+                Get My Free Analysis
                 <ArrowRight size={18} />
               </button>
               <p className="text-xs text-slate-500 mt-1">

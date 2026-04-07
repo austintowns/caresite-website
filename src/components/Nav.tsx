@@ -44,7 +44,7 @@ export function Nav() {
               </a>
             ))}
             <Button href="#contact" size="sm">
-              Book Your Free Audit
+              Get Your Free Analysis
             </Button>
           </div>
 
@@ -82,7 +82,7 @@ export function Nav() {
                 </a>
               ))}
               <Button href="#contact" className="w-full text-center">
-                Book Your Free Audit
+                Get Your Free Analysis
               </Button>
             </div>
           </motion.div>

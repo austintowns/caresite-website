@@ -31,7 +31,7 @@ const tiers: Tier[] = [
       "Email support",
       "HIPAA-safe architecture",
     ],
-    cta: "Book Free Audit",
+    cta: "Get Free Analysis",
   },
   {
     name: "Standard",
@@ -49,7 +49,7 @@ const tiers: Tier[] = [
       "AI dispute assistant",
       "Priority email & chat support",
     ],
-    cta: "Book Free Audit",
+    cta: "Get Free Analysis",
     popular: true,
   },
   {
@@ -79,6 +79,12 @@ export function Pricing() {
         title="Simple, transparent pricing"
         subtitle="No annual contracts. No setup fees. Cancel anytime."
       />
+
+      <div className="max-w-2xl mx-auto mb-10 rounded-xl bg-slate-50 border border-slate-200 px-6 py-5 text-center">
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <span className="font-semibold text-slate-800">The math is simple:</span> the average SNF earns $8,000–$12,000 per admission. One additional resident per quarter from improved online reputation pays for a full year of Standard.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {tiers.map((tier, i) => (
@@ -140,12 +146,7 @@ export function Pricing() {
         ))}
       </div>
 
-      <div className="mt-12 max-w-2xl mx-auto rounded-xl bg-slate-50 border border-slate-200 px-6 py-5 text-center">
-        <p className="text-sm text-slate-600 leading-relaxed">
-          <span className="font-semibold text-slate-800">The math is simple:</span> the average SNF earns $8,000–$12,000 per admission. One additional resident per quarter from improved online reputation pays for a full year of Standard.
-        </p>
-      </div>
-      <p className="mt-6 text-center text-sm text-slate-500">
+      <p className="mt-12 text-center text-sm text-slate-500">
         Multi-facility discounts available.{" "}
         <a href="#contact" className="text-primary-500 font-medium hover:underline">
           Contact us

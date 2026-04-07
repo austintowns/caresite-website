@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Section, SectionHeader } from "./Section";
-import { ChevronDown } from "lucide-react";
+import { Button } from "./Button";
+import { ChevronDown, ArrowRight } from "lucide-react";
 
 const faqs = [
   {
@@ -108,6 +109,22 @@ export function FAQ() {
         {faqs.map((faq, i) => (
           <AccordionItem key={faq.q} q={faq.q} a={faq.a} index={i} />
         ))}
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-slate-200"
+        >
+          <p className="text-slate-600 text-center sm:text-left">
+            Still have questions? We can answer them in a 20-minute call.
+          </p>
+          <Button href="#contact" size="md" className="shrink-0 gap-2 flex items-center">
+            Get Your Free Analysis
+            <ArrowRight size={16} />
+          </Button>
+        </motion.div>
       </div>
     </Section>
   );
