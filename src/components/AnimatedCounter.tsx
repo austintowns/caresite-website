@@ -25,6 +25,15 @@ export function AnimatedCounter({
     if (!inView || hasAnimated.current) return;
     hasAnimated.current = true;
 
+    const prefersReduced =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (prefersReduced) {
+      setCount(target);
+      return;
+    }
+
     const startTime = performance.now();
     const step = (currentTime: number) => {
       const elapsed = currentTime - startTime;

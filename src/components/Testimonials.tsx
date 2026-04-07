@@ -36,8 +36,8 @@ export function Testimonials() {
     <Section id="testimonials" dark>
       <SectionHeader
         eyebrow="Testimonials"
-        title="Trusted by facilities like yours"
-        subtitle="Hear from SNF administrators who transformed their online reputation."
+        title="Results from the field"
+        subtitle="SNF administrators on what changed after Caresite."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

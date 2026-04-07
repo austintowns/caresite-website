@@ -25,10 +25,18 @@ export function VideoSection() {
             muted
             loop
             playsInline
+            aria-label="Caresite.io product demonstration"
             className="w-full h-auto"
             poster="/caresite-demo-poster.jpg"
           >
             <source src="/caresite-demo.mp4" type="video/mp4" />
+            <track
+              kind="captions"
+              src="/caresite-demo.vtt"
+              srcLang="en"
+              label="English"
+              default
+            />
           </video>
         </div>
       </motion.div>

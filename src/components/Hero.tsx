@@ -38,8 +38,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
           >
-            Your facility deserves{" "}
-            <span className="text-primary-500">better reviews</span>
+            The Google review platform{" "}
+            <span className="text-primary-500">built for skilled nursing</span>
           </motion.h1>
 
           {/* Subheadline */}

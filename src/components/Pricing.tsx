@@ -40,6 +40,7 @@ const tiers: Tier[] = [
     tagline: "The complete toolkit for growing facilities",
     features: [
       "Everything in Basic",
+      "PointClickCare integration",
       "Unlimited SMS campaigns",
       "Advanced analytics & trending",
       "Multi-location dashboard (up to 10)",
@@ -59,7 +60,7 @@ const tiers: Tier[] = [
     features: [
       "Everything in Standard",
       "Unlimited locations",
-      "PointClickCare integration",
+      "MatrixCare, Netsmart & AHT integration",
       "F-tag & survey correlation reports",
       "Staff performance insights",
       "Custom KPI reporting",
@@ -139,7 +140,12 @@ export function Pricing() {
         ))}
       </div>
 
-      <p className="mt-12 text-center text-sm text-slate-500">
+      <div className="mt-12 max-w-2xl mx-auto rounded-xl bg-slate-50 border border-slate-200 px-6 py-5 text-center">
+        <p className="text-sm text-slate-600 leading-relaxed">
+          <span className="font-semibold text-slate-800">The math is simple:</span> the average SNF earns $8,000–$12,000 per admission. One additional resident per quarter from improved online reputation pays for a full year of Standard.
+        </p>
+      </div>
+      <p className="mt-6 text-center text-sm text-slate-500">
         Multi-facility discounts available.{" "}
         <a href="#contact" className="text-primary-500 font-medium hover:underline">
           Contact us

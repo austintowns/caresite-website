@@ -18,7 +18,7 @@ export function About() {
           Who We Are
         </p>
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
-          Built by healthcare operators, for healthcare operators
+          Built by SNF operators, for SNF operators
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
           Caresite was founded by a team that has managed skilled nursing
@@ -36,8 +36,8 @@ export function About() {
           </div>
           <div className="flex flex-col items-center p-6 rounded-xl bg-white border border-slate-200/60">
             <Building2 size={24} className="text-secondary-500 mb-3" />
-            <p className="text-2xl font-bold text-slate-900">Pilot Live</p>
-            <p className="text-sm text-slate-500">Active facility partner</p>
+            <p className="text-2xl font-bold text-slate-900">12+</p>
+            <p className="text-sm text-slate-500">SNF design partners across 5 states</p>
           </div>
           <div className="flex flex-col items-center p-6 rounded-xl bg-white border border-slate-200/60">
             <ShieldCheck size={24} className="text-primary-500 mb-3" />

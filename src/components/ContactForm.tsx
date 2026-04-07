@@ -184,8 +184,7 @@ export function ContactForm() {
                 <ArrowRight size={18} />
               </button>
               <p className="text-xs text-slate-500 mt-1">
-                We&apos;ll audit your current Google profile and deliver a 90-day
-                growth plan — no commitment required.
+                We&apos;ll audit your Google profile and deliver a 90-day growth plan. No commitment, no spam. We never share your information.
               </p>
             </form>
           )}

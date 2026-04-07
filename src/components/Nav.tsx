@@ -28,7 +28,7 @@ export function Nav() {
     <nav className="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200/60">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a href="#" className="flex items-center">
+          <a href="/" aria-label="Caresite.io – home" className="flex items-center">
             <Logo className="text-2xl" />
           </a>
 

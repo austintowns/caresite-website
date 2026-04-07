@@ -15,6 +15,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.caresight.io"),
   title: "Caresite.io — Google Review Management for Skilled Nursing Facilities",
   description:
     "The only Google review platform built exclusively for skilled nursing facilities. HIPAA-safe SMS campaigns, AI dispute assistance, and sentiment-gated review flow. Starting at $149/mo.",
