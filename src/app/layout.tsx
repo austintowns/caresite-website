@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "Stop losing families to bad reviews. The only reputation platform designed for SNF compliance, workflows, and outcomes.",
     type: "website",
     url: "https://caresite.io",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Caresite.io" }],
   },
   twitter: {
     card: "summary_large_image",
