@@ -60,7 +60,7 @@ const tiers: Tier[] = [
     features: [
       "Everything in Standard",
       "Unlimited locations",
-      "MatrixCare, Netsmart & AHT integration",
+      "Priority EHR integration support",
       "F-tag & survey correlation reports",
       "Staff performance insights",
       "Custom KPI reporting",

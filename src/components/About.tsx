@@ -41,8 +41,8 @@ export function About() {
           </div>
           <div className="flex flex-col items-center p-6 rounded-xl bg-white border border-slate-200/60">
             <ShieldCheck size={24} className="text-primary-500 mb-3" />
-            <p className="text-2xl font-bold text-slate-900">SOC 2</p>
-            <p className="text-sm text-slate-500">Security compliance in progress</p>
+            <p className="text-2xl font-bold text-slate-900">Zero</p>
+            <p className="text-sm text-slate-500">PHI stored on our servers — ever</p>
           </div>
         </div>
       </motion.div>

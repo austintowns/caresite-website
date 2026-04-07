@@ -24,7 +24,7 @@ export function TrustBar() {
           </div>
           <div className="flex items-center gap-2">
             <Building2 size={18} className="text-slate-400" />
-            <span>Works with PointClickCare, MatrixCare & all EHRs</span>
+            <span>PointClickCare integration — more EHRs coming soon</span>
           </div>
           <div className="flex items-center gap-2">
             <Phone size={18} className="text-slate-400" />

@@ -16,10 +16,10 @@ export function CTABanner() {
       >
         <div className="text-center sm:text-left">
           <p className="text-lg font-semibold text-white">
-            See exactly where your Google profile stands.
+            Book your free Google profile audit.
           </p>
           <p className="text-primary-100 text-sm mt-1">
-            Free audit, competitor comparison, and 90-day roadmap — no commitment.
+            Competitor comparison + 90-day roadmap — no commitment, no sales pressure.
           </p>
         </div>
         <Button

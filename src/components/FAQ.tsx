@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Does Caresite work with my EHR?",
-    a: "Yes. Caresite integrates directly with PointClickCare to automatically detect discharges and trigger outreach — no manual work required. We also support MatrixCare, Netsmart, and AHT through our integration layer. If your EHR isn't listed, contact us and we'll work with your team to connect it.",
+    a: "Yes. Caresite integrates directly with PointClickCare to automatically detect discharges and trigger outreach — no manual work required. Additional EHR integrations are in development. If you're not on PointClickCare, contact us and we'll work with your team on a connection timeline.",
   },
   {
     q: "How quickly will we see results?",

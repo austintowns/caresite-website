@@ -36,7 +36,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+            className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-6xl"
           >
             The Google review platform{" "}
             <span className="text-primary-500">built for skilled nursing</span>
@@ -49,9 +49,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 text-lg text-slate-600 leading-relaxed sm:text-xl max-w-2xl mx-auto"
           >
-            The only review management platform built exclusively for skilled
-            nursing. HIPAA-safe architecture, EHR integration, and automated
-            outreach that turns discharged families into five-star advocates.
+            Automated SMS outreach after every discharge. Sentiment gating
+            routes happy families to Google and concerns to a private form.
+            Zero PHI stored. Zero manual work.
           </motion.p>
 
           {/* CTAs */}
@@ -90,13 +90,18 @@ export function Hero() {
             label="Star rating after 90 days"
             decimal
           />
-          <StatCard
-            icon={<Shield size={20} className="text-primary-500" />}
-            value={100}
-            suffix="%"
-            label="HIPAA compliant by architecture"
-          />
+          <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
+            <div className="mb-2"><Shield size={20} className="text-primary-500" /></div>
+            <div className="flex items-baseline gap-0.5">
+              <span className="text-3xl font-bold text-slate-900">No</span>
+              <span className="text-xl font-semibold text-primary-500 ml-1">BAA</span>
+            </div>
+            <p className="mt-1 text-sm text-slate-500">Required — HIPAA-safe by design</p>
+          </div>
         </motion.div>
+        <p className="mt-6 text-center text-xs text-slate-400">
+          * Based on average results across design partner facilities. Individual results vary.
+        </p>
       </div>
     </section>
   );

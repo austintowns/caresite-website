@@ -27,12 +27,12 @@ export function ContactForm() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            See what 10 reviews a month looks like
+            See where your profile stands against nearby facilities
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            We&apos;ll walk through your current Google profile, show you where
-            you stand against nearby facilities, and map out a 90-day review
-            growth plan — no commitment required.
+            We&apos;ll audit your Google profile, benchmark it against 3
+            nearby competitors, and deliver a 90-day review growth plan —
+            no commitment required.
           </p>
         </motion.div>
 
@@ -178,7 +178,7 @@ export function ContactForm() {
               </div>
               <button
                 type="submit"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 text-white px-8 py-4 text-lg font-semibold hover:bg-primary-600 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 text-white px-8 py-4 text-lg font-semibold hover:bg-primary-600 shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
               >
                 Book My Free Audit
                 <ArrowRight size={18} />
