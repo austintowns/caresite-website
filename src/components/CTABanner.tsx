@@ -24,7 +24,7 @@ export function CTABanner() {
         </div>
         <Button
           href="#contact"
-          variant="secondary"
+          variant="white"
           size="lg"
           className="shrink-0 gap-2"
         >

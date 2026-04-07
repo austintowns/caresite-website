@@ -1,6 +1,6 @@
 import type { ReactNode, AnchorHTMLAttributes } from "react";
 
-type Variant = "primary" | "secondary" | "outline";
+type Variant = "primary" | "secondary" | "outline" | "white";
 type Size = "sm" | "md" | "lg";
 
 interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -16,6 +16,8 @@ const variants: Record<Variant, string> = {
     "bg-secondary-500 text-white hover:bg-secondary-600 shadow-lg shadow-secondary-500/25",
   outline:
     "border-2 border-primary-500 text-primary-500 hover:bg-primary-50",
+  white:
+    "bg-white text-primary-600 hover:bg-primary-50 shadow-lg shadow-black/10",
 };
 
 const sizes: Record<Size, string> = {
