@@ -7,8 +7,8 @@ import { CaseStudy } from "@/components/CaseStudy";
 import { CTABanner } from "@/components/CTABanner";
 import { ProductPreview } from "@/components/ProductPreview";
 import { Features } from "@/components/Features";
-import { ComparisonTable } from "@/components/ComparisonTable";
 import { Testimonials } from "@/components/Testimonials";
+import { ComparisonTable } from "@/components/ComparisonTable";
 import { Pricing } from "@/components/Pricing";
 import { About } from "@/components/About";
 import { FAQ } from "@/components/FAQ";
@@ -36,8 +36,9 @@ export default function Home() {
         <CTABanner />
         <ProductPreview />
         <Features />
-        <ComparisonTable />
         <Testimonials />
+        <CTABanner />
+        <ComparisonTable />
         <Pricing />
         <About />
         <FAQ />

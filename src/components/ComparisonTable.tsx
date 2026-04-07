@@ -96,11 +96,23 @@ const rows: Row[] = [
 
 function CellIcon({ value }: { value: CellValue }) {
   if (value === true)
-    return <Check size={18} className="text-secondary-500" aria-label="Yes" />;
+    return (
+      <span role="img" aria-label="Yes">
+        <Check size={18} className="text-secondary-500" aria-hidden="true" />
+      </span>
+    );
   if (value === false)
-    return <X size={18} className="text-red-400" aria-label="No" />;
+    return (
+      <span role="img" aria-label="No">
+        <X size={18} className="text-red-400" aria-hidden="true" />
+      </span>
+    );
   if (value === "partial")
-    return <Minus size={18} className="text-amber-400" aria-label="Partial" />;
+    return (
+      <span role="img" aria-label="Partial">
+        <Minus size={18} className="text-amber-400" aria-hidden="true" />
+      </span>
+    );
   return (
     <span className="text-sm font-semibold text-slate-700">{value}</span>
   );

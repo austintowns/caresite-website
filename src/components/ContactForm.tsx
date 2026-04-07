@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, useRef, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Section, SectionHeader } from "./Section";
 import { Button } from "./Button";
@@ -8,12 +8,13 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const successRef = useRef<HTMLDivElement>(null);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // For now, just show success state
-    // TODO: connect to form backend (Formspree, Supabase, etc.)
     setSubmitted(true);
+    // Move focus to success message for screen readers
+    setTimeout(() => successRef.current?.focus(), 100);
   }
 
   return (
@@ -43,7 +44,11 @@ export function ContactForm() {
           className="mt-10"
         >
           {submitted ? (
-            <div className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-secondary-50 border border-secondary-200">
+            <div
+              ref={successRef}
+              tabIndex={-1}
+              className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-secondary-50 border border-secondary-200 focus:outline-none"
+            >
               <CheckCircle size={48} className="text-secondary-500" />
               <h3 className="text-xl font-semibold text-slate-900">
                 We&apos;ll be in touch!
@@ -72,7 +77,7 @@ export function ContactForm() {
                     type="text"
                     required
                     autoComplete="name"
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
                     placeholder="Jane Smith"
                   />
                 </div>
@@ -89,7 +94,7 @@ export function ContactForm() {
                     type="email"
                     required
                     autoComplete="email"
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
                     placeholder="jane@facility.com"
                   />
                 </div>
@@ -107,7 +112,7 @@ export function ContactForm() {
                     name="facility"
                     type="text"
                     required
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
                     placeholder="Sunrise Skilled Nursing"
                   />
                 </div>
@@ -117,14 +122,14 @@ export function ContactForm() {
                     className="block text-sm font-medium text-slate-700 mb-1.5"
                   >
                     Phone{" "}
-                    <span className="text-slate-400 font-normal">(optional)</span>
+                    <span className="text-slate-500 font-normal">(optional)</span>
                   </label>
                   <input
                     id="phone"
                     name="phone"
                     type="tel"
                     autoComplete="tel"
-                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
+                    className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-500 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-colors"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -178,7 +183,7 @@ export function ContactForm() {
                 Book My Free Audit
                 <ArrowRight size={18} />
               </button>
-              <p className="text-xs text-slate-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 We&apos;ll audit your current Google profile and deliver a 90-day
                 growth plan — no commitment required.
               </p>
