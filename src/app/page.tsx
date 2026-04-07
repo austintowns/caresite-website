@@ -5,6 +5,7 @@ import { PainPoints } from "@/components/PainPoints";
 import { HowItWorks } from "@/components/HowItWorks";
 import { CaseStudy } from "@/components/CaseStudy";
 import { CTABanner } from "@/components/CTABanner";
+import { VideoSection } from "@/components/VideoSection";
 import { ProductPreview } from "@/components/ProductPreview";
 import { Features } from "@/components/Features";
 import { Testimonials } from "@/components/Testimonials";
@@ -33,6 +34,7 @@ export default function Home() {
         <PainPoints />
         <HowItWorks />
         <CaseStudy />
+        <VideoSection />
         <CTABanner />
         <ProductPreview />
         <Features />
