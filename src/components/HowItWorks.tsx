@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Section, SectionHeader } from "./Section";
-import { Upload, Send, Star } from "lucide-react";
+import { Link, Send, Star } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    icon: <Upload size={28} />,
-    title: "Upload your discharge list",
+    icon: <Link size={28} />,
+    title: "Connect your EHR",
     description:
-      "Export a CSV from PointClickCare, MatrixCare, or any EHR. Your data is cleaned on your own computer before anything is sent to us — no diagnoses, insurance, or patient IDs ever leave your machine.",
+      "Caresite integrates with PointClickCare to automatically detect discharges. No manual work, no data entry — discharge events trigger outreach automatically. Zero PHI ever touches our servers.",
   },
   {
     number: "02",
@@ -34,7 +34,7 @@ export function HowItWorks() {
       <SectionHeader
         eyebrow="How It Works"
         title="Three steps to transform your reviews"
-        subtitle="From discharge list to 5-star Google review in under a minute of setup time."
+        subtitle="From discharge to 5-star Google review — fully automated, zero manual work."
       />
 
       <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">

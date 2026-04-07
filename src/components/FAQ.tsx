@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Does Caresite work with my EHR?",
-    a: "Yes. Caresite works with PointClickCare, MatrixCare, Netsmart, AHT, and any EHR that can export a CSV discharge list. Our Enterprise plan includes a direct PCC integration for automatic discharge notifications. For all other EHRs, a simple CSV upload takes under a minute — our parser handles the rest.",
+    a: "Yes. Caresite integrates directly with PointClickCare to automatically detect discharges and trigger outreach — no manual work required. We also support MatrixCare, Netsmart, and AHT through our integration layer. If your EHR isn't listed, contact us and we'll work with your team to connect it.",
   },
   {
     q: "How quickly will we see results?",
